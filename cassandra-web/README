@@ -1,0 +1,8 @@
+Connect to host "134.171.189.10" at defautl cassandra port 9042
+Open in interface localhost 3002 (with --net=host available can acess with ip adress of machine where docker is run)
+
+To change parameter change lastline of Dockerfile. See doc of cassandra-web app
+
+CMD cassandra-web --hosts "134.171.189.10" -B "0.0.0.0:3002"
+
+docker run -d --net=host image
